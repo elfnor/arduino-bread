@@ -10,7 +10,7 @@ This project is ongoing. Currently I have made a breadmaker with an Arduino brai
 
 The model of breadmaker I'm using is a fairly old Sanyo "The Bread Factory Plus" (Model SBM-20). From other people's projects I suspect many breadmakers are quite similar internally and these notes could be applicable to many other models and brands.
 
-The circuit and documentation can be found at http://www.elfnor.com/Arduino Bread Details.html
+The circuit and documentation can be found at http://elfnor.com/Arduino%20Bread%20Details.html
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
