@@ -123,14 +123,22 @@ void setup() {
   display.setSegments(data);
   setDisplay(n);
   
-    // 10 second delay to make it easier to upload new programs  
-  delay(10000);   
+  // 10 second delay to make it easier to upload new programs  
+  //delay(10000);   
   // initialize serial communications at 9600 bps:  
   Serial.begin(9600);
+  // three beeps to show its turned on
+  tone(buzzer, 262, 200);
+  delay(200);
+  tone(buzzer, 262, 200);
+  delay(200);
+  tone(buzzer, 262, 200);
+  
 }
 
 void loop() 
 {  
+  setDisplay(n);
   // Update the Bounce instances : 
   start_deb.update();
   select_deb.update();
@@ -192,7 +200,7 @@ void make_loaf(int n)
   if (stop_pushed){return;}
   rise(pgrms[n].min_rise1);
   if (stop_pushed){return;}
-  punchDown(1);
+  punchDown(pgrms[n].min_punchDown);
   if (stop_pushed){return;}
   rise(pgrms[n].min_rise2);
   if (stop_pushed){return;} 
